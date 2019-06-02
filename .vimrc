@@ -5,5 +5,12 @@ set wildmode=list:longest,full
 colo slate
 set clipboard=unnamedplus
 set completeopt=menu,preview
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
+set smartindent
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+set title
