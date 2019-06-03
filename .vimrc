@@ -14,3 +14,5 @@ inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 set title
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
