@@ -14,6 +14,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
+let g:ycm_autoclose_preview_window_after_insertion = 1
 " Install vim-plug if it's not already installed.
 if empty(glob('~/.vim/autoload/plug.vim'))
 silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
