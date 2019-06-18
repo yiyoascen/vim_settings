@@ -4,15 +4,19 @@ set wildmenu
 set wildmode=list:longest,full
 colo slate
 set clipboard=unnamedplus
-set completeopt=menu,preview
-set smartindent
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
+set autoindent
 set title
-filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+filetype plugin indent on
+" Manage plugins with vim-plug.
+call plug#begin()
+Plug 'scrooloose/nerdtree'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'jiangmiao/auto-pairs'
+call plug#end()
+" Install vim-plug if it's not already installed.
+if empty(glob('~/.vim/autoload/plug.vim'))
+silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+\ https://raw.github.com/junegunn/vim-plug/master/plug.vim
+autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
