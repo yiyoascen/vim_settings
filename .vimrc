@@ -1,23 +1,24 @@
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
 syntax on
 set number
 set wildmenu
 set wildmode=list:longest,full
-colo slate
+colo pablo
 set clipboard=unnamedplus
 set title
 set omnifunc=syntaxcomplete#Complete
 filetype plugin indent on
-set autoindent
 set cindent
+set shiftwidth=2
+set expandtab
+set termguicolors
+let g:netrw_banner = 0
+let g:netrw_winsize = 12
 " Manage plugins with vim-plug.
 call plug#begin()
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Valloric/YouCompleteMe'
+Plug 'digitaltoad/vim-pug'
 Plug 'mattn/emmet-vim'
 call plug#end()
-let g:ycm_autoclose_preview_window_after_insertion = 1
-" Install vim-plug if it's not already installed.
-"if empty(glob('~/.vim/autoload/plug.vim'))
-"silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-"\ https://raw.github.com/junegunn/vim-plug/master/plug.vim
-"autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-"endif
+set completeopt-=preview
