@@ -10,7 +10,7 @@ set title
 set omnifunc=syntaxcomplete#Complete
 filetype plugin indent on
 set cindent
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 set termguicolors
 let g:netrw_banner = 0
