@@ -4,14 +4,14 @@ syntax on
 set number
 set wildmenu
 set wildmode=list:longest,full
-colo pablo
+colo evening
 set clipboard=unnamedplus
 set title
 set omnifunc=syntaxcomplete#Complete
 filetype plugin indent on
 set cindent
-set shiftwidth=4
-set expandtab
+set shiftwidth=2
 set termguicolors
-let g:netrw_banner = 0
-let g:netrw_winsize = 12
+set completeopt-=preview
+set rtp+=~/.vim/bundle/Vundle.vim
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro " it fixes comments
