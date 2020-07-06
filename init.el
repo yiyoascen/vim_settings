@@ -37,6 +37,7 @@
 (evil-global-set-key 'insert (kbd "TAB") 'company-complete)
 (define-key evil-normal-state-map (kbd "C-a") 'evil-numbers/inc-at-pt)
 (define-key evil-normal-state-map (kbd "C-x") 'evil-numbers/dec-at-pt)
+(define-key evil-normal-state-map (kbd "C-z") 'suspend-emacs)
 (setq company-clang-insert-arguments nil)
 (setq company-dabbrev-downcase 0)
 (setq company-idle-delay 0)
