@@ -15,7 +15,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (evil-numbers company-ctags format-all flycheck-clangcheck flycheck-clang-tidy flycheck-rust rustic racer rust-mode company-racer flycheck-clang-analyzer spacemacs-theme flycheck company-c-headers ## company evil))))
+    (js-format emmet-mode tern company-go flycheck-golangci-lint evil-numbers company-ctags format-all flycheck-clangcheck flycheck-clang-tidy flycheck-rust rustic racer rust-mode company-racer flycheck-clang-analyzer spacemacs-theme flycheck company-c-headers ## company evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
