@@ -8,10 +8,9 @@ colo pablo
 set clipboard=unnamedplus
 set title
 set omnifunc=syntaxcomplete#Complete
-filetype plugin indent on
 set cindent
+filetype plugin indent on    " required
 set shiftwidth=4
 set termguicolors
-set completeopt-=preview
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro " it fixes comments
 set completeopt-=preview
