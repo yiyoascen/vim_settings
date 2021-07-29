@@ -12,6 +12,7 @@ filetype plugin indent on    " required
 
 call plug#begin()
 Plug 'gryf/wombat256grf'
+
 call plug#end()
 
 set shiftwidth=4
@@ -19,3 +20,4 @@ set termguicolors
 colo wombat256grf
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro " it fixes comments
 set completeopt-=preview
+inoremap <TAB> <C-x><C-o>
